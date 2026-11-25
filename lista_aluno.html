@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <script src="js/script.js"></script>
     <header>
         <h1>Academia Fitness</h1>
         <p>Sistema de Gerenciamento de Academia</p>
@@ -35,6 +35,19 @@
             <h2>Alunos Cadastrados</h2>
 
             <p>Consulte os alunos registrados no sistema.</p>
+            <div class="pesquisa">
+                <input
+                    type="text"
+                    id="campoPesquisa"
+                    placeholder="Pesquisar aluno por nome ou CPF..."
+                >
+            
+                <button type="button" onclick="pesquisarAluno()">
+                    Pesquisar
+                </button>
+            </div>
+            
+            <p id="mensagemPesquisa"></p>
 
             <div class="tabela-container">
                 <table>
