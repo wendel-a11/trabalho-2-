@@ -142,3 +142,39 @@ tbody tr:hover {
     color: #777;
     font-size: 13px;
 }
+
+/* Barra de pesquisa */
+.pesquisa {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pesquisa input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.pesquisa button {
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #f0a500;
+    color: #171717;
+}
+
+@media (max-width: 600px) {
+    .pesquisa {
+        flex-direction: column;
+    }
+}
